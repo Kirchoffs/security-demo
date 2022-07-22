@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form role="search" action="" method="GET">
+      <input type="text" name="search" placeholder="Search what you want">
+          <button type="submit">Search</button>
+      </form>
+      <script>
+        var search = location.search.substring(8);
+        document.write('The search result is:' + decodeURIComponent(search));
+      </script>
+  </body>
+</html>
